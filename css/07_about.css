@@ -1,0 +1,41 @@
+.about_card {
+    padding: 0 88px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about_titles {
+    padding: 0 24px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.about_polaroid {
+    display: flex;
+    padding: 24px;
+}
+
+.about_photo {
+    width: 50%;
+    height: 290px;
+    object-fit: cover;
+    padding: 0 24px;
+}
+
+.about_text {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+}
+
+@media screen and (max-width:999px) {
+    .about_photo {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .about_polaroid {
+        flex-wrap: wrap;
+    }
+}

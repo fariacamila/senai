@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/01_new_reset.css">
+    <link rel="stylesheet" href="css/02_header.css">
+    <link rel="stylesheet" href="css/03_footer.css">
+    <link rel="stylesheet" href="css/09_consulta.css">
+    <link rel="stylesheet" href="css/10_consulta_checkbox.css">
+    <link rel="stylesheet" href="css/11_consulta_hora.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Vacinação</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logotipo">
+                <img src="img/logo.jpg" alt="logotipo">
+                <a class="logo" href="/">Lilika's Pet Shop</a>
+            </div>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="01_home.html">Home</a></li>
+                <li><a href="02_banho-tosa.html">Banho & tosa</a></li>
+                <li><a href="03_consultas.html">Vacinas</a></li>
+                <li><a href="04_login.html">Cadastro</a></li>
+                <li><a href="05_cadastro.html">Cadastro de pacientes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+
+    <section class="consult_container">
+        <div class="consult_cards">
+            <div class="consult_cards">
+                <div class="consult_card">
+                    <div class="consult_content">
+                        <h2>Vacina</h2>
+                        <p>Escolha a vacina e o horário.</p>
+                    </div>
+                    <a class="consult_button" href="#">Adquirir produto</a>
+                </div>
+            </div>
+
+            <section class="show_container">
+                <section class="check_container">
+
+                    <div class="check_title">
+                        <h2>Escolha a vacina</h2>
+                    </div>
+                    <div class="check_content">
+                        <div class="check_group">
+                            <input class="checkbox" type="checkbox" id="antirrabica" value="antirrabica">
+                            <label class="checkbox_label" for="antirrabica">Antirrábica</label>
+                        </div>
+                        <div class="check_group">
+                            <input class="checkbox" type="checkbox" name="checkbox" id="polivalente"
+                                value="polivalente">
+                            <label class="checkbox_label" for="polivalente">Polivalente</label>
+                        </div>
+                        <div class="check_group">
+                            <input class="checkbox" type="checkbox" name="checkbox" id="cinomose" value="cinomose">
+                            <label class="checkbox_label" for="cinomose">Cinomose</label>
+                        </div>
+                        <div class="check_group">
+                            <input class="checkbox" type="checkbox" name="checkbox" id="parvovirose"
+                                value="parvovirose">
+                            <label class="checkbox_label" for="parvovirose">Parvovirose</label>
+                        </div>
+                        <div class="check_group">
+                            <input class="checkbox" type="checkbox" name="checkbox" id="leptospirose"
+                                value="leptospirose">
+                            <label class="checkbox_label" for="leptospirose">Leptospirose</label>
+                        </div>
+                        <div class="check_group">
+                            <input class="checkbox" type="checkbox" name="checkbox" id="coronavirus"
+                                value="coronavirus">
+                            <label class="checkbox_label" for="coronavirus">Coronavírus Canino</label>
+                        </div>
+                    </div>
+                    <div class="check_values">
+                        <p class="check_list"></p>
+                    </div>
+
+                </section>
+
+                <section class="show">
+                    <div class="time">
+                        <h2>Horarios disponíveis</h2>
+                        <div class="time_container">
+                            <div class=" time_content">
+
+                                <div class="time_option">
+                                    <input class="radio" type="radio" name="category" id="oito">
+                                    <label for="oito">08:00</label>
+                                </div>
+
+                                <div class="time_option">
+                                    <input class="radio" type="radio" name="category" id="nove">
+                                    <label for="nove">09:00</label>
+                                </div>
+
+                                <div class="time_option">
+                                    <input class="radio" type="radio" name="category" id="dez">
+                                    <label for="dez">10:00</label>
+                                </div>
+
+                                <div class="time_option">
+                                    <input class="radio" type="radio" name="category" id="onze">
+                                    <label for="onze">11:00</label>
+                                </div>
+
+                                <div class="time_option">
+                                    <input class="radio" type="radio" name="category" id="doze">
+                                    <label for="doze">12:00</label>
+                                </div>
+
+                                <div class="time_option">
+                                    <input class="radio" type="radio" name="category" id="treze">
+                                    <label for="treze">13:00</label>
+                                </div>
+
+                                <div class="time_option">
+                                    <input class="radio" type="radio" name="category" id="quatorze">
+                                    <label for="quatorze">14:00</label>
+                                </div>
+
+                                <div class="time_option">
+                                    <input class="radio" type="radio" name="category" id="quize">
+                                    <label for="quize">15:00</label>
+                                </div>
+
+                                <div class="time_option">
+                                    <input class="radio" type="radio" name="category" id="dezesseis">
+                                    <label for="dezesseis">16:00</label>
+                                </div>
+
+                            </div>
+                            <div class="time_selected">
+                                Selecione a hora
+                                <img src="img/arrow-down.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+
+        </div>
+    </section>
+
+    <footer>
+        <section class="footer">
+            <ul class="social_icon">
+                <li><a class="fab fa-facebook-f" href="#"></a></li>
+                <li><a class="fab fa-instagram" href="#"></a></li>
+                <li><a class="fab fa-twitter" href="#"></a></li>
+                <li><a class="fab fa-linkedin" href="#"></a></li>
+            </ul>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <p class="fa-solid fa-copyright">2022 Camila Faria || All Right Reseved</p>
+        </section>
+    </footer>
+
+    <script src="js/01_header.js"></script>
+    <script src="js/03_consulta.js"></script>
+    <script src="js/04_consulta_chekbox.js"></script>
+    <script src="js/05_consulta_hora.js"></script>
+</body>
+
+</html>

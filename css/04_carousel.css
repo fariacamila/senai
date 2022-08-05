@@ -1,0 +1,121 @@
+.carrossel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.carrossel::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #ff676d;
+    clip-path: inset(47% 0 0 0);
+    z-index: -1;
+}
+
+.carrossel_container {
+    padding: 24px 0;
+    max-width: 950px;
+    overflow: hidden;
+}
+
+.carrossel_container .carrousel_menu {
+    width: 400%;
+    display: flex;
+    transition: all 1s ease;
+}
+
+.carrossel_container .carrousel_menu .cards {
+    width: 50%;
+    justify-content: space-between;
+    margin: 0 20px;
+    flex-wrap: wrap;
+
+}
+
+.content .media_icons a:hover {
+    border-color: #ff676d;
+    color: #ff676d;
+    background-color: #fff;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.button label {
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    margin: 0 4px;
+    border-radius: 20px;
+    transition: all.5s ease;
+}
+
+.button label.active {
+    width: 35px;
+}
+
+#two:checked~.carrousel_menu {
+    margin-left: -100%;
+}
+
+#three:checked~.carrousel_menu {
+    margin-left: -200%;
+}
+
+#four:checked~.carrousel_menu {
+    margin-left: -300%;
+}
+
+#one:checked~.button label.one {
+    width: 35px;
+}
+
+#one:checked~.button label.two {
+    width: 15px;
+}
+
+#two:checked~.button label.two {
+    width: 35px;
+}
+
+#two:checked~.button label.one {
+    width: 15px;
+}
+
+#three:checked~.button label.three {
+    width: 35px;
+}
+
+#three:checked~.button label.one, label.two {
+    width: 15px;
+}
+
+#four:checked~.button label.four {
+    width: 35px;
+}
+
+#four:checked~.button label.one, label.two, label.two {
+    width: 15px;
+}
+
+input {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .carrossel_container .carrousel_menu .cards .card {
+        margin: 20px 0 10px 0;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .carrossel_container .carrousel_menu .cards .card {
+        width: 100%;
+    }
+}
